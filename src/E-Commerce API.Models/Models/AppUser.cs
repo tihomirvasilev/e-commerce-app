@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc.ViewEngines;
-using System.Net;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace E_Commerce_API.Data.Models
 {
-    public class AppUser
+    public class AppUser : IdentityUser
     {
         public required string FirstName { get; set; }
 
