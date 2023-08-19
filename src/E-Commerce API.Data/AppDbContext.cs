@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace E_Commerce_API.Data
 {
-    internal class AppDbContext : IdentityDbContext<AppUser>
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
         public DbSet<Article> Articles { get; set; }
         public DbSet<Maker> Makers { get; set; }
